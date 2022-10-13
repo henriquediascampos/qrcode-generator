@@ -4,16 +4,25 @@ import * as path from 'path';
 
 function createWindow() {
     const mainWindow = new BrowserWindow({
-        height: 600,
-        width: 800,
+        height: 400,
+        width: 500,
         webPreferences: {
             // preload: path.join(__dirname, 'preload.js'),
         },
     });
 
-    mainWindow.loadFile(path.join(__dirname, '../index.html'));
+    // const mainWindow2 = new BrowserWindow({
+    //     height: 300,
+    //     width: 1000,
+    //     webPreferences: {
+    //         // preload: path.join(__dirname, 'preload.js'),
+    //     },
+    // });
 
-    mainWindow.webContents.openDevTools();
+    mainWindow.loadFile(path.join(__dirname, '../index.html'));
+    // mainWindow2.loadFile(path.join(__dirname, '../index.html'));
+
+    // mainWindow.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
