@@ -1,0 +1,26 @@
+.container-chips {
+    position: absolute;
+    width: 99%;
+    padding: 0 48px 0 4px;
+    z-index: -1;
+    flex-wrap: wrap;
+    padding-top: 28px;
+}
+
+.container-chips > *:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.chip {
+    background-color: rgb(104, 104, 104);
+    color: #fff;
+    border-radius: 16px;
+    height: 30px;
+    align-items: center;
+    padding: 4px;
+}
+
+.invisible-text {
+    color: transparent;
+    user-select: none;
+}

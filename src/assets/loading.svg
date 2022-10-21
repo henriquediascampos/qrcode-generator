@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 40 60">
+    <polygon fill="none" stroke="#000" stroke-width="2" points="2,2 38,2 38,38 2,38" />
+
+    <polyline fill="none" stroke="#000" stroke-width="2" points="20,10 20,30 10,30" />
+    <polyline fill="none" stroke="#000" stroke-width="2" points="12,25 12,20 25,20 25,22 30,22 30,19" />
+
+    <polygon fill="none" stroke="#000" stroke-width="2" points="15,5 15,15 5,15 5,5  "/>
+    <polygon fill="none" stroke="#000" stroke-width="2" points="11,9 11,11 9,11 9,9  "/>
+
+    <polygon fill="none" stroke="#000" stroke-width="2" points="35,5 35,15 25,15 25,5"/>
+    <polygon fill="none" stroke="#000" stroke-width="2" points="31,9 31,11 29,11 29,9"/>
+
+    <polygon fill="none" stroke="#000" stroke-width="2" points="35,25 35,35 25,35 25,25"/>
+    <polygon fill="none" stroke="#000" stroke-width="2" points="31,29 31,31 29,31 29,29"/>
+    <text x="0" y="45" fill="$000">
+        Loading ...
+    </text>
+</svg>

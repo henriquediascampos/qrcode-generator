@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello World!</title>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <!-- <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'" /> -->
+        <!-- <meta
+            http-equiv="X-Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'" /> -->
+    </head>
+
+    <body>
+        <input
+            id="file_control"
+            type="file"
+            style="display: none"
+            multiple
+            accept="text/plain" />
+
+        <div class="container column">
+            <div class="form-field chips">
+                <label class="label-form">Arquivos:</label>
+                <input
+                    class="input-form-field"
+                    type="text"
+                    id="input_file"
+                    readonly
+                    placeholder="Selecione um arquivos" />
+
+                <button class="button-icon" id="btnOpenFile">
+                    <i class="basic-icon">attach_file_add</i>
+                </button>
+                <button class="button-icon hidden" id="btnCleanFile">
+                    <i class="basic-icon">close</i>
+                </button>
+            </div>
+        </div>
+
+        <link rel="stylesheet" type="text/css" href="./home.css" />
+        <script>
+            var exports = {};
+        </script>
+        <script src="./home.js"></script>
+    </body>
+</html>

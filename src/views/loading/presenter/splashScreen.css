@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+* {
+    user-select: none;
+}
+.loding {
+    fill: #fff;
+}
+.square {
+    stroke-dasharray: 144;
+    animation: dash-square 2.5s cubic-bezier(0.35, 0.09, 0.48, 0.72);
+}
+
+.minus-square {
+    stroke-dasharray: 40;
+    animation: dash-minus-square 2.5s cubic-bezier(0.35, 0.09, 0.48, 0.72);
+}
+
+.into-square {
+    stroke-dasharray: 8;
+    animation: dash-into-square 2.5s cubic-bezier(0.35, 0.09, 0.48, 0.72);
+}
+
+.text-loading {
+    font-size: 7.15pt;
+    font-family: 'fantasy', sans-serif;
+    animation: text-blink 1.25s ease-in infinite;
+}
+
+.line-1 {
+    stroke-dasharray: 30;
+    animation: dash-line-1 2.5s cubic-bezier(0.35, 0.09, 0.48, 0.72);
+}
+
+.line-2 {
+    stroke-dasharray: 28;
+    animation: dash-line-2 2.5s cubic-bezier(0.35, 0.09, 0.48, 0.72);
+}
+
+@keyframes dash-line-1 {
+    0% {
+        stroke-dashoffset: 30;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash-line-2 {
+    0% {
+        stroke-dashoffset: 28;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes text-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes dash-into-square {
+    0% {
+        stroke-dashoffset: 8;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash-minus-square {
+    0% {
+        stroke-dashoffset: 40;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash-square {
+    0% {
+        stroke-dashoffset: 144;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

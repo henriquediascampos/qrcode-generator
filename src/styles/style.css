@@ -1,0 +1,8 @@
+@import url('./stylezation/reset.css');
+@import url('./stylezation/flex.css');
+@import url('./stylezation/color-palette.css');
+@import url('../components/index.css');
+
+.hidden {
+    display: none;
+}
